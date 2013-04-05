@@ -24,6 +24,8 @@ Make sure to set the containing element to `display: none;` so it will be hidden
 
 There are two ways to trigger the modal.
 
+#### Method 1: Data Attribute
+
 The first way is to add a `data-trigger-modal` attribute to an element that, when clicked, will trigger a modal:
 
 ```html
@@ -31,6 +33,8 @@ The first way is to add a `data-trigger-modal` attribute to an element that, whe
 ```
 
 In the above example, when someone clicks on the "Trigger modal" anchor element, it will trigger the modal with an id of `my-modal`.
+
+#### Method 2: Programmatically
 
 The second way is to programmatically trigger the modal with an event that you define:
 
