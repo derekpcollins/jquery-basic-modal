@@ -53,6 +53,35 @@ $(function() {
 
 In the above example we're triggering a modal with an id of `my-modal` when someone clicks on an anchor element with a class of `trigger-modal`.
 
+## Options
+
+The following are user-configurable options. How you define these options depends on which method you're using to trigger your modals (see below for examples).
+
+<table>
+  <thead>
+    <tr>
+      <th>Option</th>
+      <th>Default Value</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>`closeModalClass`</td>
+      <td>close-modal</td>
+      <td>String</td>
+      <td>The class name to give an element to close the modal on click.</td>
+    </tr>
+    <tr>
+      <td>`animation`</td>
+      <td>*null*</td>
+      <td>String</td>
+      <td>Animation to run when the modal is triggered. **Options:** 'fade' or 'slideDown'</td>
+    </tr>
+  </tbody>
+</table>
+
 ## License
 
 This work is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/).
