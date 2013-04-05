@@ -6,11 +6,11 @@
     // Create some defaults, extending them with any options that were provided
     var settings = $.extend( {
       closeModalClass : 'close-modal', /* The class name to give an element to close the modal on click. Type: String */
-      animation : '', /* Animation to run when the modal is triggered. Options: 'fade', 'slideDown' Type: String */
-      animationDuration: 400, /* Speed of animations. 400 is the jQuery default. Type: Number */
-      offsetTop : '', /* The number of pixels the modal should be offset from the top of the browser window. Type: Nubmer */
-      backdropId : 'modal-backdrop', /* The class name of the backdrop div. Type: String */
-      backdropAnimation : false, /* Fades the backdrop in/out. Type: Boolean */
+      animation : null, /* Animation to run when the modal is triggered. Options: 'fade', 'slideDown' Type: String */
+      animationDuration: 400, /* Speed of the animation. Type: Number */
+      offsetTop : null, /* The number of pixels the modal should be offset from the top of the browser window. Type: Nubmer */
+      backdropId : 'modal-backdrop', /* The id name of the backdrop div. Type: String */
+      backdropAnimation : false, /* If true, fades the backdrop in/out. Type: Boolean */
       backdropAnimationDuration: 50, /* The speed of the backdrop animation. Type: Number */
       backdropClose : true, /* If true, will close the modal when someone clicks outside of it. Type: Boolean */
       escClose : true /* If true, will close the modal if the Esc key is pressed. Type: Boolean */
