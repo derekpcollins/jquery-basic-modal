@@ -5,15 +5,15 @@
 
     // Create some defaults, extending them with any options that were provided
     var settings = $.extend( {
-      closeModalClass : 'close-modal',
-      animation : false,
-      animationDuration: 400, /* Speed of animations. 400 is the jQuery default. */
-      offsetTop : '',
-      backdropId : 'modal-backdrop',
-      backdropAnimation : false,
-      backdropAnimationDuration: 50,
-      backdropClose : true,
-      escClose : true
+      closeModalClass : 'close-modal', /* The class name to give an element to close the modal on click. Type: string */
+      animation : '', /* Animation to run when the modal is triggered. Options: 'fade', 'slideDown' Type: string */
+      animationDuration: 400, /* Speed of animations. 400 is the jQuery default. Type: int */
+      offsetTop : '', /* The number of pixels the modal should be offset from the top of the browser window. Type: int */
+      backdropId : 'modal-backdrop', /* The class name of the backdrop div. Type: string */
+      backdropAnimation : false, /* Fades the backdrop in/out. Type: boolean */
+      backdropAnimationDuration: 50, /* The speed of the backdrop animation. Type: int */
+      backdropClose : true, /* If true, will close the modal when someone clicks outside of it. Type: boolean */
+      escClose : true /* If true, will close the modal if the Esc key is pressed. Type: boolean */
     }, options);
 
     // Create the modal backdrop
