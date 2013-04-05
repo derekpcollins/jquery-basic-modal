@@ -147,9 +147,18 @@ $('#my-modal').modal({
 
 I've intentionally kept this plugin very basic — I didn't want to imply too much in terms of HTML markup or style — but there are some necessary defaults.
 
-By default the resulting modal will be centered vertically and horizontally relative to the browser window. A backdrop is also created by default. The backdrop ensures that the modal will be shown on top of your content and provides a click area for dismissing the modal. There are no styles implied for the backdrop, so if you want to give it a background color, for example, then you'll need to style that in your CSS.
+By default the resulting modal will be centered vertically and horizontally relative to the browser window. This can be overridden by providing an optional value for `offsetTop`, which will offset the modal **n** number of pixels from the top of the browser window, but it will still center the modal horizontally.
 
-A lot of modal plugins force an element into the modal for closing id. I don't like this becuase I usually want to choose and style this element myself. By default clicking outside of the modal or pressing the Esc key will close the modal, but you can optionally add an element to your modal with a class of `close-modal` (this class name itself can be overridden) that will close the modal on click.
+A backdrop is also created by default. The backdrop ensures that the modal will be shown on top of your content and provides a click area for dismissing the modal. There are no styles implied for the backdrop, so if you want to give it a background color, for example, then you'll need to style that in your CSS.
+
+A lot of modal plugins force an element into the modal for closing it (e.g. and anchor tag that says "Close"). I don't like this becuase I usually want to choose the element myself and style it accordingly. By default clicking outside of the modal or pressing the Esc key will close the modal, but you can optionally add an element to your modal with a class of `close-modal` (this class name itself can be overridden) that will close the modal on click. Here's an example:
+
+```html
+<div id="my-modal" style="display: none;">
+  <a href="#" class="close-modal">Close</a>
+  <p>This is my modal content.</p>
+</div>
+```
 
 ## License
 
