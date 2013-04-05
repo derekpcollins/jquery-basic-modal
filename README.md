@@ -79,6 +79,48 @@ The following are user-configurable options. How you define these options depend
       <td>String</td>
       <td>Animation to run when the modal is triggered. <strong>Options:</strong> 'fade' or 'slideDown'</td>
     </tr>
+    <tr>
+      <td><code>animationDuration</code></td>
+      <td>400</td>
+      <td>Number</td>
+      <td>Speed of the animation.</td>
+    </tr>
+    <tr>
+      <td><code>offsetTop</code></td>
+      <td>null</td>
+      <td>Number</td>
+      <td>The number of pixels the modal should be offset from the top of the browser window. If no value is given, the modal will be centered vertically and horizontally.</td>
+    </tr>
+    <tr>
+      <td><code>backdropId</code></td>
+      <td>modal-backdrop</td>
+      <td>String</td>
+      <td>The id name of the backdrop div.</td>
+    </tr>
+    <tr>
+      <td><code>backdropAnimation</cod></td>
+      <td>false</td>
+      <td>Boolean</td>
+      <td>If true, fades the backdrop in/out.</td>
+    </tr>
+    <tr>
+      <td><code>backdropAnimationDuration</code></td>
+      <td>50</td>
+      <td>Number</td>
+      <td>The speed of the backdrop animation.</td>
+    </tr>
+    <tr>
+      <td><code>backdropClose</code></td>
+      <td>true</td>
+      <td>Boolean</td>
+      <td>If true, will close the modal when someone clicks outside of it.</td>
+    </tr>
+    <tr>
+      <td><code>escClose</code></td>
+      <td>true</td>
+      <td>Boolean</td>
+      <td>If true, will close the modal if the Esc key is pressed.</td>
+    </tr>
   </tbody>
 </table>
 
