@@ -63,7 +63,7 @@ The following are user-configurable options. How you define these options depend
       <th>Option</th>
       <th>Default Value</th>
       <th>Type</th>
-      <th>Description</th>
+      <th width="320">Description</th>
     </tr>
   </thead>
   <tbody>
