@@ -10,7 +10,7 @@ First, download and include `basic-modal.jquery.js` (or the minified version) in
 <script src="/path/to/basic-modal.jquery.js"></script>
 ```
 
-Next, you'll need to create the HTML for your modal:
+Next, create the HTML markup for your modal:
 
 ```html
 <div id="my-modal" style="display: none;">
@@ -18,9 +18,11 @@ Next, you'll need to create the HTML for your modal:
 </div>
 ```
 
-You'll want to make sure that you set the containing element to `display: none;` so that it will be hidden by default.
+Make sure to set the containing element to `display: none;` so it will be hidden by default.
 
-Next, there are two ways that you can trigger the modal.
+### Triggering the modal
+
+There are two ways to trigger the modal.
 
 The first way is to add a `data-trigger-modal` attribute to an element that, when clicked, will trigger a modal:
 
@@ -28,7 +30,7 @@ The first way is to add a `data-trigger-modal` attribute to an element that, whe
 <a href="#" data-trigger-modal="my-modal">Trigger modal</a>
 ```
 
-In the above example, when someone clicks on the "Trigger modal" anchor element, it trigger a modal with an id of `my-modal`.
+In the above example, when someone clicks on the "Trigger modal" anchor element, it will trigger the modal with an id of `my-modal`.
 
 The second way is to programatically trigger the modal with an event that you define:
 
