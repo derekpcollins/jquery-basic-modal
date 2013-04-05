@@ -1,0 +1,12 @@
+#modal-backdrop {
+  background-color: rgba(0,0,0,.5);
+}
+.modal {
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.3);
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(0,0,0,.3);
+  height: 200px;
+  padding: 20px;
+  width: 600px;
+}
