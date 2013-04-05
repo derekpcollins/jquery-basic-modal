@@ -32,13 +32,13 @@ The first way is to add a `data-trigger-modal` attribute to an element that, whe
 
 In the above example, when someone clicks on the "Trigger modal" anchor element, it will trigger the modal with an id of `my-modal`.
 
-The second way is to programatically trigger the modal with an event that you define:
+The second way is to programmatically trigger the modal with an event that you define:
 
 ```html
 <!-- The element we want to trigger the modal -->
 <a href="#" class="trigger-modal">Trigger modal</a>
 
-<!-- The jQuery code to programatically trigger the modal -->
+<!-- The jQuery code to programmatically trigger the modal -->
 <script>
 $(function() {
 
@@ -132,7 +132,7 @@ If you're using the `data-attribute-modal` method to trigger the modal, then you
 
 Please note that JSON arrays require the use of double-quotes, so you'll need to use single-quotes around the array.
 
-If you're programatically triggering the modal, then you can pass the options to the `modal()` method:
+If you're programmatically triggering the modal, then you can pass the options to the `modal()` method:
 
 ```javascript
 $('#my-modal').modal({
@@ -147,11 +147,11 @@ $('#my-modal').modal({
 
 I've intentionally kept this plugin very basic — I didn't want to imply too much in terms of HTML markup or style — but there are some necessary defaults.
 
-By default the resulting modal will be centered vertically and horizontally relative to the browser window. This can be overridden by providing an optional value for `offsetTop`, which will offset the modal **n** number of pixels from the top of the browser window, but it will still center the modal horizontally.
+By default the resulting modal will be centered vertically and horizontally relative to the browser window. This can be overridden by providing an optional value for `offsetTop`, which will offset the modal *n* number of pixels from the top of the browser window, but it will still center the modal horizontally.
 
 A backdrop is also created by default. The backdrop ensures that the modal will be shown on top of your content and provides a click area for dismissing the modal. There are no styles implied for the backdrop, so if you want to give it a background color, for example, then you'll need to style that in your CSS.
 
-A lot of modal plugins force an element into the modal for closing it (e.g. and anchor tag that says "Close"). I don't like this becuase I usually want to choose the element myself and style it accordingly. By default clicking outside of the modal or pressing the Esc key will close the modal, but you can optionally add an element to your modal with a class of `close-modal` (this class name itself can be overridden) that will close the modal on click. Here's an example:
+A lot of modal plugins force an element into the modal for closing it (e.g. and anchor tag that says "Close"). I don't like this because I usually want to choose the element myself and style it accordingly. By default clicking outside of the modal or pressing the Esc key will close the modal, but you can optionally add an element to your modal with a class of `close-modal` (this class name itself can be overridden) that will close the modal on click. Here's an example:
 
 ```html
 <div id="my-modal" style="display: none;">
