@@ -147,7 +147,7 @@ $('#my-modal').modal({
 
 I've intentionally kept this plugin very basic — I didn't want to imply too much in terms of HTML markup or style — but there are some necessary defaults.
 
-By default the resulting modal will be centered vertically and horizontally relative to the browser window. This can be overridden by providing an optional value for `offsetTop`, which will offset the modal *n* number of pixels from the top of the browser window, but it will still center the modal horizontally.
+By default the resulting modal will be centered vertically and horizontally relative to the browser window. This can be overridden by providing an optional value for `offsetTop`, which will offset the modal *n* pixels from the top of the browser window (it will still center the modal horizontally, however).
 
 A backdrop is also created by default. The backdrop ensures that the modal will be shown on top of your content and provides a click area for dismissing the modal. There are no styles implied for the backdrop, so if you want to give it a background color, for example, then you'll need to style that in your CSS.
 
