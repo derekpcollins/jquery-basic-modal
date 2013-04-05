@@ -68,16 +68,16 @@ The following are user-configurable options. How you define these options depend
   </thead>
   <tbody>
     <tr>
-      <td>`closeModalClass`</td>
+      <td><code>closeModalClass</code></td>
       <td>close-modal</td>
       <td>String</td>
       <td>The class name to give an element to close the modal on click.</td>
     </tr>
     <tr>
-      <td>`animation`</td>
-      <td>*null*</td>
+      <td><code>animation</code></td>
+      <td><em>null</em></td>
       <td>String</td>
-      <td>Animation to run when the modal is triggered. **Options:** 'fade' or 'slideDown'</td>
+      <td>Animation to run when the modal is triggered. <strong>Options:</strong> 'fade' or 'slideDown'</td>
     </tr>
   </tbody>
 </table>
