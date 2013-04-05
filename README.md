@@ -145,9 +145,11 @@ $('#my-modal').modal({
 
 ## Defaults & Styling the Modal
 
-I've intentionally kept this plugin very basic -- I didn't want to imply too much in terms of HTML markup or style -- but there are some necessary defaults.
+I've intentionally kept this plugin very basic — I didn't want to imply too much in terms of HTML markup or style — but there are some necessary defaults.
 
 By default the resulting modal will be centered vertically and horizontally relative to the browser window. A backdrop is also created by default. The backdrop ensures that the modal will be shown on top of your content and provides a click area for dismissing the modal. There are no styles implied for the backdrop, so if you want to give it a background color, for example, then you'll need to style that in your CSS.
+
+A lot of modal plugins force an element into the modal for closing id. I don't like this becuase I usually want to choose and style this element myself. By default clicking outside of the modal or pressing the Esc key will close the modal, but you can optionally add an element to your modal with a class of `close-modal` (this class name itself can be overridden) that will close the modal on click.
 
 ## License
 
