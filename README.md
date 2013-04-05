@@ -55,7 +55,7 @@ In the above example we're triggering a modal with an id of `my-modal` when some
 
 ## Options
 
-The following are user-configurable options. How you define these options depends on which method you're using to trigger your modals (see below for examples).
+The following are user-configurable options. How you set these options depends on which method you're using to trigger your modals (see below for examples).
 
 <table>
   <thead>
@@ -123,6 +123,25 @@ The following are user-configurable options. How you define these options depend
     </tr>
   </tbody>
 </table>
+
+If you're using the `data-attribute-modal` method to trigger the modal, then you can set these options by passing a JSON array through a `data-modal-options` attribute on the same element:
+
+```html
+<a href="#" data-trigger-modal="my-modal" data-modal-options='{"closeModalClass":"exit", "animation":"fade", "animationSpeed":200}'>Trigger modal 2</a>
+```
+
+Please note that JSON arrays require the use of double-quotes, so you'll need to use single-quotes around the array.
+
+If you're programatically triggering the modal, then you can pass the options to the `modal()` method:
+
+```javascript
+$('#my-modal').modal({
+  animation : 'slideDown',
+  offsetTop: 60,
+  backdropAnimation : true,
+  backdropAnimationDuration : 100
+})
+```
 
 ## License
 
