@@ -127,7 +127,7 @@ The following are user-configurable options. How you set these options depends o
 If you're using the `data-attribute-modal` method to trigger the modal, then you can set these options by passing a JSON array through a `data-modal-options` attribute on the same element:
 
 ```html
-<a href="#" data-trigger-modal="my-modal" data-modal-options='{"closeModalClass":"exit", "animation":"fade", "animationSpeed":200}'>Trigger modal 2</a>
+<a href="#" data-trigger-modal="my-modal" data-modal-options='{"closeModalClass":"exit", "animation":"fade", "animationSpeed":200}'>Trigger modal</a>
 ```
 
 Please note that JSON arrays require the use of double-quotes, so you'll need to use single-quotes around the array.
@@ -137,7 +137,7 @@ If you're programatically triggering the modal, then you can pass the options to
 ```javascript
 $('#my-modal').modal({
   animation : 'slideDown',
-  offsetTop: 60,
+  offsetTop : 60,
   backdropAnimation : true,
   backdropAnimationDuration : 100
 })
