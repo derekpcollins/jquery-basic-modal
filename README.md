@@ -143,6 +143,12 @@ $('#my-modal').modal({
 })
 ```
 
+## Defaults & Styling the Modal
+
+I've intentionally kept this plugin very basic -- I didn't want to imply too much in terms of HTML markup or style -- but there are some necessary defaults.
+
+By default the resulting modal will be centered vertically and horizontally relative to the browser window. A backdrop is also created by default. The backdrop ensures that the modal will be shown on top of your content and provides a click area for dismissing the modal. There are no styles implied for the backdrop, so if you want to give it a background color, for example, then you'll need to style that in your CSS.
+
 ## License
 
 This work is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/).
