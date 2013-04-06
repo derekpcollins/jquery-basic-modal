@@ -174,14 +174,17 @@
   };
 
   // Listen for clicks on elements with data-trigger-modal attribute
-  $('[data-trigger-modal]').on('click', function( e ) {
-    e.preventDefault();
+  $(document).on('click', '[data-trigger-modal]', function( event ) {
+    event.preventDefault();
 
-    var modal = $(this).attr( 'data-trigger-modal' ),
-        options = $(this).attr( 'data-modal-options' );
+    var target = $(event.target),
+        modal = target.attr( 'data-trigger-modal' ),
+        options = target.attr( 'data-modal-options' );
 
-    // Turn JSON string into an object
-    options = $.parseJSON( options );
+    if( options ) {
+      // Turn JSON string into an object
+      options = $.parseJSON( options );
+    }
 
     $('#' + modal).modal( options );
   });
