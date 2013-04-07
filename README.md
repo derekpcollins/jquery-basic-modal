@@ -91,7 +91,7 @@ The following are user-configurable options. How you set these options depends o
     </tr>
     <tr>
       <td><code>offsetTop</code></td>
-      <td>null</td>
+      <td><em>null</em></td>
       <td>Number</td>
       <td>The number of pixels the modal should be offset from the top of the browser window. If no value is given, the modal will be centered vertically and horizontally.</td>
     </tr>
