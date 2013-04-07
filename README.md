@@ -102,10 +102,16 @@ The following are user-configurable options. How you set these options depends o
       <td>The id name of the backdrop div.</td>
     </tr>
     <tr>
-      <td><code>backdropAnimation</cod></td>
+      <td><code>backdropAnimation</code></td>
       <td>false</td>
       <td>Boolean</td>
       <td>If true, fades the backdrop in/out.</td>
+    </tr>
+    <tr>
+      <td><code>backdropZindex</code></td>
+      <td>100</td>
+      <td>Number</td>
+      <td>The z-index value of the backdrop.</td>
     </tr>
     <tr>
       <td><code>backdropAnimationDuration</code></td>

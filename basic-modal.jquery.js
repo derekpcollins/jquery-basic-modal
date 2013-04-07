@@ -12,6 +12,7 @@
       backdropId : 'modal-backdrop', /* The id name of the backdrop div. Type: String */
       backdropAnimation : false, /* If true, fades the backdrop in/out. Type: Boolean */
       backdropAnimationDuration: 50, /* The speed of the backdrop animation. Type: Number */
+      backdropZindex: 100, /* The z-index value given to the backdrop. Type: Number */
       backdropClose : true, /* If true, will close the modal when someone clicks outside of it. Type: Boolean */
       escClose : true /* If true, will close the modal if the Esc key is pressed. Type: Boolean */
     }, options);
@@ -23,7 +24,7 @@
       'position' : 'fixed',
       'top' : 0,
       'width' : '100%',
-      'z-index' : 100
+      'z-index' : settings.backdropZindex
     });
 
     if( settings.backdropAnimation ) {
@@ -80,7 +81,7 @@
       // Give the modal only the necessary styles
       modal.css({
         'position' : 'absolute',
-        'z-index' : 101
+        'z-index' : parseInt(settings.backdropZindex) + 1
       });
 
       if( settings.animation === 'fade' ) {
