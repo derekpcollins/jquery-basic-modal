@@ -6,7 +6,7 @@ A jQuery plugin for creating basic modals.
 
 ## Usage
 
-First, download and include `basic-modal.jquery.js` (or the minified version) in your HTML document:
+First, download and include `basic-modal.jquery.js` (or the minified/gzipped version) in your HTML document:
 
 ```html
 <script src="/path/to/basic-modal.jquery.js"></script>
