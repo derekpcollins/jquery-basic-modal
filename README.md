@@ -1,5 +1,7 @@
 # Basic Modal jQuery Plugin
 
+[![Build Status](https://travis-ci.org/derekpcollins/jquery-basic-modal.png?branch=master)](https://travis-ci.org/derekpcollins/jquery-basic-modal)
+
 A jQuery plugin for creating basic modals.
 
 ## Usage
