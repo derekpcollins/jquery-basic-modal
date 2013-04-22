@@ -51,7 +51,7 @@
 
     function positionModal ( modal ) {
 
-      if ( settings.offsetTop !== '' && settings.offsetTop >= 0 ) {
+      if ( settings.offsetTop !== null && settings.offsetTop >= 0 ) {
 
         // Dynamically position the modal horizontally
         $(window).resize(function(){
